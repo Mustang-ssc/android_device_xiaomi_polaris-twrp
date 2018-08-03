@@ -1,0 +1,6 @@
+ro.product.brand=xiaomi
+ro.product.name=polaris
+ro.product.device=polaris
+ro.product.mod_device=polaris_global
+ro.build.product=polaris
+ro.treble.enabled=true
