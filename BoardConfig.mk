@@ -92,6 +92,8 @@ TW_USE_LEDS_HAPTICS := true
 #TW_EXCLUDE_MTP := true
 TW_EXCLUDE_TWRPAPP := true
 #TW_SCREEN_BLANK_ON_BOOT := true
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+TW_MAX_BRIGHTNESS := 200
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
