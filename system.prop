@@ -5,5 +5,5 @@ ro.product.mod_device=polaris_global
 ro.build.product=polaris
 ro.treble.enabled=true
 sys.usb.controller=a600000.dwc3
-#sys.usb.rndis.func.name=rndis_bam
-#sys.usb.rmnet.func.name=rmnet_bam
+sys.usb.rndis.func.name=rndis_bam
+sys.usb.rmnet.func.name=rmnet_bam

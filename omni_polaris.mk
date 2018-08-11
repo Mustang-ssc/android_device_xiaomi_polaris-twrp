@@ -1,5 +1,5 @@
 #
-# Copyright 2018 The Android Open Source Project
+# Copyright 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,17 +22,16 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from hardware-specific part of the product configuration
-#$(call inherit-product, device/xiaomi/polaris/device.mk)
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := polaris
 PRODUCT_NAME := omni_polaris
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI MIX 2S
+PRODUCT_MODEL := Mi Mix 2S
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=polaris \
-    BUILD_PRODUCT=polaris \
-    TARGET_DEVICE=polaris
+# enable stock zip packages flash
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.secure=1 \
+    ro.adb.secure=0 \
+    ro.allow.mock.location=0
+
